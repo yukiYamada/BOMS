@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="y1U-re-nta">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - a-->
         <scene sceneID="4">
             <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="a" id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGl-v0-vnF">
@@ -40,26 +40,90 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AS-3t-XiG">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bc1-Cc-XIo" kind="push" id="hgf-fk-X1I"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Jbj-pQ-KbE" firstAttribute="leading" secondItem="jbZ-2x-6QI" secondAttribute="leading" type="default" id="19k-x6-BZb"/>
                             <constraint firstItem="fGl-v0-vnF" firstAttribute="top" secondItem="5" secondAttribute="top" constant="83" id="2Gf-z7-dM7"/>
+                            <constraint firstAttribute="trailing" secondItem="1AS-3t-XiG" secondAttribute="trailing" constant="155" id="8tT-Fp-Dfy"/>
                             <constraint firstItem="Jbj-pQ-KbE" firstAttribute="trailing" secondItem="fGl-v0-vnF" secondAttribute="trailing" type="default" id="CzI-n8-j63"/>
                             <constraint firstItem="Jbj-pQ-KbE" firstAttribute="top" secondItem="jbZ-2x-6QI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cfS-xw-XFf"/>
                             <constraint firstItem="jbZ-2x-6QI" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="48" id="kCq-lJ-vBe"/>
                             <constraint firstItem="Jbj-pQ-KbE" firstAttribute="trailing" secondItem="jbZ-2x-6QI" secondAttribute="trailing" type="default" id="mQK-Wy-ZBL"/>
                             <constraint firstItem="jbZ-2x-6QI" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="nzh-8I-aR2"/>
+                            <constraint firstItem="1AS-3t-XiG" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="zxD-wW-qjH"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="YPt-NZ-Xgn"/>
                     <connections>
                         <outlet property="txtMessage" destination="Jbj-pQ-KbE" id="aZd-Md-awg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1065" y="-352"/>
+        </scene>
+        <!--View Controller2 - b-->
+        <scene sceneID="C4B-sf-fmL">
+            <objects>
+                <viewController title="b" id="bc1-Cc-XIo" customClass="ViewController2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YkO-W3-dv6">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z3s-27-Tye"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vGx-xA-y89" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-141" y="-352"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SGl-W2-dSv">
+            <objects>
+                <navigationController id="y1U-re-nta" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8rx-CH-Fuk">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="seK-s3-9AI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLY-Kv-af9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1930" y="-352"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="txtMessage" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ViewController2" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController2.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

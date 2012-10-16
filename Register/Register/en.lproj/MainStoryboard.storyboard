@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="xgx-U2-Ps1">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--Start - 業務-->
+        <scene sceneID="4">
+            <objects>
+                <viewController title="業務" id="2" customClass="Start" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKr-wc-UqM">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="業務開始">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="v79-ty-r9Q" kind="push" identifier="btnStartClick" id="sEL-Ju-o6M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngm-j9-pLE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="ta2-BW-SAH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="マスタ管理">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6w-74-qzr">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="業務開始（練習モード）">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ngm-j9-pLE" firstAttribute="top" secondItem="5" secondAttribute="top" constant="393" id="3aq-NZ-IGR"/>
+                            <constraint firstItem="JKr-wc-UqM" firstAttribute="top" secondItem="5" secondAttribute="top" constant="458" id="AXS-Lb-bX3"/>
+                            <constraint firstItem="JKr-wc-UqM" firstAttribute="trailing" secondItem="Ngm-j9-pLE" secondAttribute="trailing" type="default" id="Cbz-rO-wXw"/>
+                            <constraint firstItem="X6w-74-qzr" firstAttribute="leading" secondItem="JKr-wc-UqM" secondAttribute="leading" type="default" id="DHT-ZE-Ity"/>
+                            <constraint firstItem="JKr-wc-UqM" firstAttribute="trailing" secondItem="X6w-74-qzr" secondAttribute="trailing" type="default" id="FfJ-wY-RsT"/>
+                            <constraint firstAttribute="bottom" secondItem="X6w-74-qzr" secondAttribute="bottom" constant="396" id="e1D-Oe-9Tg"/>
+                            <constraint firstItem="Ngm-j9-pLE" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="262" id="qNE-oR-5RW"/>
+                            <constraint firstItem="Ngm-j9-pLE" firstAttribute="leading" secondItem="JKr-wc-UqM" secondAttribute="leading" type="default" id="qqP-ht-Zfg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="業務メイン画面" id="YWY-VU-Ma6"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="768" height="960"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419" y="-378"/>
+        </scene>
+        <!--Accounts - 会計メイン-->
+        <scene sceneID="dQ3-5y-sVy">
+            <objects>
+                <viewController title="会計メイン" id="v79-ty-r9Q" customClass="Accounts" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xea-8N-hdd">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="会計メイン" id="lUn-CK-I9Q"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxL-5J-lYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="-378"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w4S-5h-lqx">
+            <objects>
+                <navigationController id="xgx-U2-Ps1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jBV-tz-Sc2">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="tHk-Hq-GGv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lW1-mK-6ol" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1257" y="-378"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
