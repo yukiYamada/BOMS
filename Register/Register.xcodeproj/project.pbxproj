@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F0721C8162DB87A00B23082 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F0721C6162DB87A00B23082 /* Model.xcdatamodeld */; };
+		7F0721CB162DB92100B23082 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0721CA162DB92100B23082 /* CoreData.framework */; };
+		7F0721CD162DBD3400B23082 /* DBABase.h in Resources */ = {isa = PBXBuildFile; fileRef = 7F0721CC162DBD3400B23082 /* DBABase.h */; };
+		7F0721CF162DBD4C00B23082 /* DBABase.m in Resources */ = {isa = PBXBuildFile; fileRef = 7F0721CE162DBD4C00B23082 /* DBABase.m */; };
+		7FB8811A163D99F7009C0DF7 /* payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88119163D99F7009C0DF7 /* payment.m */; };
 		7FE76731162C647F001DB131 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE76730162C647F001DB131 /* UIKit.framework */; };
 		7FE76733162C647F001DB131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE76732162C647F001DB131 /* Foundation.framework */; };
 		7FE76735162C647F001DB131 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE76734162C647F001DB131 /* CoreGraphics.framework */; };
@@ -37,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F0721C7162DB87A00B23082 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7F0721CA162DB92100B23082 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7F0721CC162DBD3400B23082 /* DBABase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBABase.h; sourceTree = "<group>"; };
+		7F0721CE162DBD4C00B23082 /* DBABase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBABase.m; sourceTree = "<group>"; };
+		7FB88118163D99F7009C0DF7 /* payment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payment.h; sourceTree = "<group>"; };
+		7FB88119163D99F7009C0DF7 /* payment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = payment.m; sourceTree = "<group>"; };
 		7FE7672C162C647F001DB131 /* Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE76730162C647F001DB131 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7FE76732162C647F001DB131 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -68,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F0721CB162DB92100B23082 /* CoreData.framework in Frameworks */,
 				7FE76731162C647F001DB131 /* UIKit.framework in Frameworks */,
 				7FE76733162C647F001DB131 /* Foundation.framework in Frameworks */,
 				7FE76735162C647F001DB131 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +99,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F0721C9162DB88000B23082 /* DBAbase */ = {
+			isa = PBXGroup;
+			children = (
+				7F0721CC162DBD3400B23082 /* DBABase.h */,
+				7F0721CE162DBD4C00B23082 /* DBABase.m */,
+			);
+			name = DBAbase;
+			sourceTree = "<group>";
+		};
+		7F0721D4162DBF6800B23082 /* DBAccess */ = {
+			isa = PBXGroup;
+			children = (
+				7F0721C6162DB87A00B23082 /* Model.xcdatamodeld */,
+				7F0721C9162DB88000B23082 /* DBAbase */,
+			);
+			name = DBAccess;
+			sourceTree = "<group>";
+		};
+		7FB88113163D99A5009C0DF7 /* 会計メイン */ = {
+			isa = PBXGroup;
+			children = (
+				7FE76772162C6FD5001DB131 /* Accounts.h */,
+				7FE76770162C69F1001DB131 /* Accounts.m */,
+			);
+			name = "会計メイン";
+			sourceTree = "<group>";
+		};
+		7FB88114163D99B1009C0DF7 /* 支払い */ = {
+			isa = PBXGroup;
+			children = (
+				7FB88118163D99F7009C0DF7 /* payment.h */,
+				7FB88119163D99F7009C0DF7 /* payment.m */,
+			);
+			name = "支払い";
+			sourceTree = "<group>";
+		};
 		7FE76721162C647F001DB131 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +157,7 @@
 		7FE7672F162C647F001DB131 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F0721CA162DB92100B23082 /* CoreData.framework */,
 				7FE76730162C647F001DB131 /* UIKit.framework */,
 				7FE76732162C647F001DB131 /* Foundation.framework */,
 				7FE76734162C647F001DB131 /* CoreGraphics.framework */,
@@ -120,8 +169,9 @@
 		7FE76736162C647F001DB131 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				7F0721D4162DBF6800B23082 /* DBAccess */,
 				7FE76737162C647F001DB131 /* Main */,
-				7FE7676E162C69AC001DB131 /* 会計メイン */,
+				7FE7676E162C69AC001DB131 /* 会計 */,
 				7FE7676B162C6516001DB131 /* 業務開始 */,
 			);
 			path = Register;
@@ -172,13 +222,13 @@
 			name = "業務開始";
 			sourceTree = "<group>";
 		};
-		7FE7676E162C69AC001DB131 /* 会計メイン */ = {
+		7FE7676E162C69AC001DB131 /* 会計 */ = {
 			isa = PBXGroup;
 			children = (
-				7FE76772162C6FD5001DB131 /* Accounts.h */,
-				7FE76770162C69F1001DB131 /* Accounts.m */,
+				7FB88114163D99B1009C0DF7 /* 支払い */,
+				7FB88113163D99A5009C0DF7 /* 会計メイン */,
 			);
-			name = "会計メイン";
+			name = "会計";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +307,8 @@
 				7FE76745162C647F001DB131 /* Default@2x.png in Resources */,
 				7FE76747162C647F001DB131 /* Default-568h@2x.png in Resources */,
 				7FE7674A162C647F001DB131 /* MainStoryboard.storyboard in Resources */,
+				7F0721CD162DBD3400B23082 /* DBABase.h in Resources */,
+				7F0721CF162DBD4C00B23082 /* DBABase.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +347,8 @@
 				7FE76741162C647F001DB131 /* AppDelegate.m in Sources */,
 				7FE7674D162C647F001DB131 /* Start.m in Sources */,
 				7FE76771162C69F1001DB131 /* Accounts.m in Sources */,
+				7F0721C8162DB87A00B23082 /* Model.xcdatamodeld in Sources */,
+				7FB8811A163D99F7009C0DF7 /* payment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +525,7 @@
 				7FE76767162C647F001DB131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FE76768162C647F001DB131 /* Build configuration list for PBXNativeTarget "RegisterTests" */ = {
 			isa = XCConfigurationList;
@@ -479,8 +534,22 @@
 				7FE7676A162C647F001DB131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F0721C6162DB87A00B23082 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F0721C7162DB87A00B23082 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7F0721C7162DB87A00B23082 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7FE76723162C647F001DB131 /* Project object */;
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11E53" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="D_UriageDetail" syncable="YES">
+        <attribute name="hanbaisu" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="itemID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nebikiritu" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="uriageID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="uriageItemID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="D_UriageInfo" syncable="YES">
+        <attribute name="azukarikin" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="hiduke" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="kanjyaID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="staffID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uriageID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="D_UriageInfo" positionX="-29" positionY="15" width="128" height="120"/>
+        <element name="D_UriageDetail" positionX="-180" positionY="9" width="128" height="120"/>
+    </elements>
+</model>

@@ -9,29 +9,23 @@
 #import "Start.h"
 
 @interface Start ()
-
 @end
 
 @implementation Start
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     //会計メイン画面起動
     [self showAccounts:NO];
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 - (void)viewDidAppear:(BOOL)animated
 {
-    
 }
-
 //会計メイン画面起動処理
 - (void)showAccounts:(BOOL)blnOnTraining
 {
@@ -43,3 +37,4 @@
     };
 }
 @end
+
