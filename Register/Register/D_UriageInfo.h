@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface payment: UIViewController
-
+//typedef struct{
+//
+//}
+@interface D_UriageInfo
+    
 @end
